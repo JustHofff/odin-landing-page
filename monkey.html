@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>monkey</title>
+        <style>
+            .image{
+                width: 1000px;
+                height: 1000px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .monke{
+                width: 50%;
+                height: auto;
+                animation-name: grow-shrink;
+                animation-duration: 1s;
+                animation-iteration-count: infinite;
+                animation-direction: alternate;
+            }
+
+            .monke:hover{
+                animation-duration: 0s;
+                animation-name: spin;
+                animation-duration: 2s;
+                animation-iteration-count: 1;
+            }
+
+            @keyframes grow-shrink {
+                from {scale: 100%;}
+                to {scale: 50%;}
+            }
+
+            @keyframes spin {
+                from {}
+                to {transform:rotate(360deg);}
+            }
+        </style>
+    </head>
+    <body>
+        <div class="image">
+            <img class="monke" src="monkey.jpeg" alt="monkey">
+            <img class="monke" src="monkey.jpeg" alt="monkey">
+        </div>
+    </body>
+</html>
