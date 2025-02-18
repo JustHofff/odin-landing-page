@@ -3,18 +3,26 @@ body {
     display: flex;
     font-family: Arial, Helvetica, sans-serif;
     color: white;
+    flex-direction: column;
 }
 
-.box1 {
-    background: #1F2937;
+
+.header,
+.box1,
+.box2,
+.box3,
+.box4,
+.footer {
+    padding: 20px;
 }
 
 .header{
     color: #f9faf9;
+    background-color: #1F2937;
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    padding: 10px;
+    padding-bottom: 0;
 }
 
 .header-logo{
@@ -33,10 +41,13 @@ body {
     align-items: center;
 }
 
+.box1 {
+    background: #1F2937;
+}
+
 .content1{
     display: flex;
     justify-content: space-between;
-    align-items: center;
 }
 
 .title{
@@ -57,10 +68,13 @@ body {
 
 .sub-button{
     width: 100px;
+    height: 38px;
+    font-size: 14px;
     font-weight: 600;
     border: none;
+    border-radius: 6px;
     background-color: #3882f6;
-    padding: 10px 20px;
+    padding: 8px 18px;
     color: white;
 }
 
@@ -73,10 +87,96 @@ body {
     background: white;
     color: black;
 }
-/*
+
+.above-text {
+    color: #1f2937;
+    font-size: 36px;
+    font-weight: 900;
+    padding-bottom: 15px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.gallery {
+    display: flex;
+    justify-content: space-around;
+}
+
+.rectangle {
+    height: 100px;
+    width: 100px;
+    border: #3882f6 solid 4px;
+    border-radius: 8px;
+}
+
+.photo1,
+.photo2,
+.photo3,
+.photo4 {
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+}
+
 .box3 {
     background: #E5E7EB;
     color: #1F2937;
     font-size: 36px;
+    display: flex;
+    flex-direction: column;
 }
-*/
+
+.name {
+    font-size: 20px;
+    font-weight: 800;
+    text-align: right;
+}
+
+.box4 {
+    background: white;
+    color: black;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sub-box4 {
+    background: #3882f6;
+    padding: 20px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.box4-text {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.box4-main-text {
+    color: white;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.box4-sub-text {
+    color: #e5e7eb;
+
+}
+
+#button2 {
+    border:#E5E7EB solid 2px;
+}
+
+.footer {
+    background: #1F2937;
+    text-align: center;
+    color: #e5e7eb;
+}
